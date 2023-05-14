@@ -1,0 +1,271 @@
+/* styles for the container */
+.container{
+    background-color:rgb(129, 58, 0);
+    width: 90%;
+    margin:auto;
+}
+
+/* styles for the nav bar */
+
+#header{
+    background-color: rgba(0, 255, 0, 0.4);
+    height:100px;
+    display: flex;
+    
+}
+
+#header h1{
+margin-left: 20px;
+color: rgb(129, 58, 0);
+}
+#navbar{
+
+}
+
+nav{
+
+}
+
+nav ul{
+    margin-top: 30px;
+    margin-left: 500px;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration:none;
+    background-color: rgb(129, 58, 0);
+    color: white;
+    padding: 10px;
+}
+
+nav ul li a:hover{
+    color:rgb(129, 58, 0);
+    background-color:white;
+    transition: 0.8s;
+}
+/* styles for the slideshow of the page */
+
+.rt-container {
+	margin: 0 auto;
+	padding-left:12px;
+	padding-right:12px;
+}
+
+.col-rt-12 {
+    width: 100%;
+}
+
+.Scriptcontent{
+	line-height:28px;	
+}
+
+.slideshow{
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 700px;
+    perspective: 1000px;
+}
+
+.content{
+    margin: auto;
+    width: 150px;
+    perspective: 1000px;
+    position:relative;
+    padding-top: 80px;
+    transform-style: preserve-3d;
+}
+/* styles for tHe animation */
+
+section{
+    margin-top: 200px;
+    height: 400px;
+}
+
+@keyframes rotate {
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+  }
+
+.slider-content{
+    width: 100%;
+    position:absolute;
+    float:right;
+    animation: rotate 15s infinite linear;
+    transform-style: preserve-3d;
+  }
+
+  .slider-content:hover{
+    cursor: pointer;
+    animation-play-state: paused;
+  }
+  
+  .slider-content figure{
+    width:180px;
+    height:120px;
+    border:1px solid #555;
+    overflow:hidden;
+    position:absolute;
+  }
+  .slider-content figure:nth-child(1){
+    transform:rotateY(0deg) translateZ(300px);
+  }
+  
+  .slider-content figure:nth-child(2){
+    transform:rotateY(40deg) translateZ(300px);
+  }
+  .slider-content figure:nth-child(3){
+    transform:rotateY(80deg) translateZ(300px);
+  }
+  .slider-content figure:nth-child(4){
+    transform:rotateY(120deg) translateZ(300px);
+  }
+  .slider-content figure:nth-child(5){
+    transform:rotateY(160deg) translateZ(300px);
+  }
+  .slider-content figure:nth-child(6){
+    transform:rotateY(200deg) translateZ(300px);
+  }
+  .slider-content figure:nth-child(7){
+    transform:rotateY(240deg) translateZ(300px);
+  }
+  .slider-content figure:nth-child(8){
+    transform:rotateY(280deg) translateZ(300px);
+  }
+  .slider-content figure:nth-child(9){
+    transform:rotateY(320deg) translateZ(300px);
+  }
+  
+  .shadow{
+    position: absolute;
+    box-shadow: 0px 0px 0px #000;
+   
+  }
+
+  .slider-content img{
+    image-rendering: auto;
+    transition: all 300ms;
+    width: 100%;
+    height: 100%;
+  }
+  .slider-content img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+   
+  }
+
+
+  
+
+/*  styles for the content blocks */
+
+#contents_block{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
+#block_header{
+    color:rgb(0, 255, 0);
+    background-color: white;
+    width:50%;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#contents_block #block{
+    background-color:white;
+    padding:20px;
+    margin: auto;
+
+}
+#contents_block h3{
+    color:rgb(129, 58, 0);
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/*  styles for the contents para's */
+
+#content{
+    background-color:white;
+    width: 70%;
+    margin:auto;
+    border-radius: 5px;
+}
+
+#content p{
+    padding: 20px;
+    color: rgb(129, 58, 0);
+}
+#content p img{
+    margin-left: 50px;
+}
+
+/* styles for the footer */
+
+#footer{
+  background-color:white;
+  width:90%;
+  margin: auto;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+
+#tembera {
+  color:rgb(129, 58, 0) ;
+}
+
+#tembera h1{
+  margin-left: 40px;
+}
+
+#tembera h2{
+margin-left: 480px;
+}
+
+
+/* styles for the form on the booking page */
+
+
+#book{
+  color: white;
+  text-align: center;
+}
+
+#form{
+  width: 50%;
+  margin: auto;
+  align-items: center;
+  background-color: rgba(1, 255, 1, 0.4);
+  padding:20px;
+}
+
+#input{
+  color:white;
+  text-align: center;
+}
+
+#submit{
+  background-color: rgb(129, 58, 0);
+  color:white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#submit:hover{
+  color:rgb(129, 58, 0);
+  background-color: white;
+  cursor: pointer ;
+}
+
+
